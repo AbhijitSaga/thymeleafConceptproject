@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en", xmlns.th="https://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+</head>
+<body>
+<h1>nkjkj</h1>
+<h1 th:text="${name}"></h1>
+<ul>
+<li th:each="n, status : ${name}">
+<span th:style="${status.odd}? 'color:red;font-weight:bold'" th:text="${status.index}+':'+ ${n}"></span>
+</li>
+</ul>
+</body>
+</html>

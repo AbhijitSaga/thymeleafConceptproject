@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8", xmlns.th="https://www.thymeleaf.org" />
+	<title>Document</title>
+</head>
+<body>
+	<h1>About learnCodeWith Abhijit</h1>
+<h1 th:text="${#strings.toUpperCase(name)}"></h1>
+<h1 th:text="${date}"></h1>
+<h1>name is: <span  th:text="${name}"></span></h1>
+<h1><span th:text="${#strings.length(name)}"></span></h1>
+	<div th:with="a=5, b=6, n=${name}">
+	<h2>value of a, b, name is:<span th:text="${name}"></span></h2>
+	
+	</div>					
+</body>
+</html>
+
